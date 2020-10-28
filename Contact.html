@@ -27,16 +27,43 @@
 	</Head>
 
 	<Body>
+		
 		<div class="topnav">
   			<a class="active" href="index.html"><i class="fa fa-fw fa-Home"></i> Home</a> 
   			<a href="Downloads.html"><i class="fa fa-fw fa-download"></i> Downloads</a> 
   			<a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
   			<a href="About.html"><i class="fa fa-fw fa-user"></i> About</a>
 		</div>
-
-		<p> <br> <br>
-			<h1>KING'S GUARD contacts should go here!</h1>
-                </p>
+		<div class ="aboutKings"> 
+			<p> <h1 class="megaBold">KING'S GUARD</h1> </p>
+			<p> <strong> King's Guard: Contact page </strong> </p>
+		</div>
+		<hr>
+		<br>
+		<div class="contactForm">
+		<form name="contact" method="POST" data-netlify="true">
+			<p>
+			  <label>Your Name: <input type="text" name="name"  style ="width: 30%;height: 5%; font-size: 30px;"/></label>   
+			</p>
+			<p>
+			  <label>Your Email: <input type="email" name="email" style ="width: 30%;height: 5%; font-size: 30px;"/></label>
+			</p>
+			<p>
+			  <label>Why you are contacting me: <select name="option[]" multiple style ="width: 25%;height: 10%; font-size: 20px;">
+				<option value="Review">Review</option>
+				<option value="Bug report">Bug report</option>
+				<option value="Reccomendations">Reccomendations</option>
+				<option value="Other">Other</option>
+			  </select></label>
+			</p>
+			<p>
+			  <label>Message: <textarea name="message" style ="width: 40%;height: 10%; font-size: 15px;"></textarea></label>
+			</p>
+			<p>
+			  <button type="submit" style="width: 10%;height: 5%; font-size: 20px;">Send</button>
+			</p>
+		  </form>
+		</div>
 		
 	</Body>
 </html>
